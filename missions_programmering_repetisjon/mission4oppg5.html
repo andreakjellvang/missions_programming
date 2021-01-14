@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> mer bank!</title>
+    </head>
+    <body>
+        
+        <script>
+            //Oppgave 5
+            var hemmeligPassord = "Rock Bison";
+            var cashKonto = 10000;
+            var brukerInput = window.prompt("Skriv inn passord for å få tilgang til nettbanken");
+            var taUtPenger = `Du har ${cashKonto} kr på konto. Hvor mye vil du ta ut?`;
+            var parsePenger = parseInt(window.prompt(taUtPenger));
+            if(brukerInput === hemmeligPassord)(parsePenger);
+                else(alert("Passordet er feil"));
+            var etterUttak = alert(cashKonto - parsePenger);
+            
+            
+        </script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click Maniac!!!!!!!!! wæææ</title>
+    </head>
+    <body>
+        
+        <h3>Klikk for å få en hemmelig overraskelse!!!</h3>
+        
+        <input type="button" id="crazy-click" value="KLikk! KlikK! klIKk!!!">
+        
+        <h5>Poengsystem:</h5>
+        <ul>
+            <li>10 klikk: liten overraskelse!</li>
+            <li>20 klikk: litt stor overraskelse!</li>
+            <li>50 klikk: gigantisk overraskelse!!!!!</li>
+        </ul>
+        
+        <p id="click-counter"></p>
+        <p id="liten-premie"></p>
+        <p id="stor-premie"></p>
+        <p id="gigantisk-premie"></p>
+        
+        <script>
+            var crazyClick = document.getElementById("crazy-click");
+            var clickCounter = document.getElementById("click-counter");
+            var startNumber = 0;
+            var litenPremieTall = 10;
+            var storPremieTall = 20;
+            var gigantiskPremieTall = 50;
+            var litenPremie = document.getElementById("liten-premie");
+            var storPermie = document.getElementById("stor-premie");
+            var gigantiskPremie = document.getElementById("gigantisk-premie");
+            
+            function showNumber() {
+                startNumber++;
+                clickCounter.innerHTML = `Antall ganger klikker: ${startNumber}`;
+                
+                if(startNumber >= gigantiskPremieTall){ 
+                    gigantiskPremie.innerHTML = "Gratulerer du har vunnet 50 kr!!!!"
+                }
+                else if(startNumber === storPremieTall){
+                    storPermie.innerHTML = "Gratulerer du har vunnet 20kr!!"
+                }
+                else if(startNumber === litenPremieTall){
+                    litenPremie.innerHTML = "Gratulerer du har vunnet 10kr!"
+                };
+            }
+            
+            crazyClick.onclick = showNumber;
+        
+        </script>
+        
+    </body>
+</html>

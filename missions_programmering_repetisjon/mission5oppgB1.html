@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>KPOP</title>
+    </head>
+    <body>
+        
+        <h3>Se bilde av favorittgruppa di!!!</h3>
+        
+        <p>Skriv inn enten NCT, BTS eller Stray Kids</p>
+        <input type="text" id="kpop-text">
+        <input type="button" id="kpop-button" value="Vis bilde">
+        <img id="image">
+                
+        <script>
+            var kpopText = document.getElementById("kpop-text");
+            var kpopButton = document.getElementById("kpop-button");
+            var image = document.getElementById("image");
+            
+            var imageNCT = "nct.jpg";
+            
+            function showPicture(){
+                if(kpopText === "NCT"){
+                image.src = `${imageNCT}`;
+            }}
+            
+            kpopButton.onClick = showPicture;
+        
+        </script>
+    
+    </body>
+</html>

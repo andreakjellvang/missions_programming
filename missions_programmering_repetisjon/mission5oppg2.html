@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Click Maniac</title>
+    </head>
+    <body>
+        
+        <input type="button" id="click-button" value="Klikk meg">
+        
+        <p id="click-counter"></p>
+        
+        <script>
+            var clickButton = document.getElementById("click-button");
+            var clickCounter = document.getElementById("click-counter");
+            var startNumber = 0;
+            
+            function clickManiac() {
+                startNumber++;
+                clickCounter.innerHTML = `Du har klikket ${startNumber} antall ganger`;
+            }
+            
+            clickButton.onclick = clickManiac;
+            
+        
+        </script>
+    
+    </body>
+</html>

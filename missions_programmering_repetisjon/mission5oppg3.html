@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Byer i Europa</title>
+    </head>
+    <body>
+        
+        <h3>Trykk på knappen for å legge til byer!</h3>
+        
+        <input type="button" id="city-button" value="Legg til by">
+        <ul id="city-output"></ul>
+        
+        <script>
+            var cityButton = document.getElementById("city-button");
+            var cityOutput = document.getElementById("city-output");
+            
+            function addCity() {
+                var city = window.prompt("Skriv inn navnet på en by");
+                cityOutput.innerHTML += `<li> ${city} </li>`;
+            }
+            
+            cityButton.onclick = addCity;
+        
+        
+        </script>
+    
+    
+    </body>
+</html>

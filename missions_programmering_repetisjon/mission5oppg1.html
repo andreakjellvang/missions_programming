@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Funksjoner og events :OOO</title>
+    </head>
+    <body>
+    
+        <input type="button" id="story-button" value="Vis meg en morsom historie">
+        <p id="story"></p>
+        
+        <script>
+        var storyButton = document.getElementById("story-button")
+        var story = document.getElementById("story");
+        var funnyStory = "Det var en gang to fisker som gikk rundt på land. Så døde begge fordi de ikke kunne puste."
+            
+        function showStory(){
+            story.innerHTML = funnyStory;
+        }   
+        
+        storyButton.onclick = showStory;
+        
+        </script>
+    
+    
+    </body>
+</html>

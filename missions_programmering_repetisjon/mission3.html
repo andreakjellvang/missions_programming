@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Variabler input og output</title>
+    </head>
+    <body>
+        
+        <!-- Oppgave 7, HTML-del -->
+        
+        <p id="dikt-output"></p>
+        
+        <!-- Oppgave 8, HTML-del -->
+        <p id="bruker-output"></p>
+        
+        <script>
+            
+            //Oppgave 1
+         
+            alert("Hihi nå er det snart jul!!!!!!!!!!");
+            
+            //Oppgave 2
+            
+            alert("Og i år er jula på et torsdag!!! woooow");
+            
+            alert("Jeg har til og med fått fri lille julafteN??!?!?!?!?!?!?");
+            
+            alert("jeg tror sjefen min liker meg veldig godt hahaha");
+            
+            //Oppgave 3
+            var stortTall = 1287462717291401;
+            
+            alert(stortTall);
+            
+            //Oppgave 4
+            var mindreTall = 1453.76;
+            
+            alert(mindreTall);
+            
+            //Oppgave 5
+            var number1 = 875;
+            var number2 = 127;
+            var result = +number1 + +number2;
+            
+            alert(result);
+            
+            //Oppgave 6
+            var ikkeNavn = "Tullfrid Tøysehagen";
+            
+            alert(`Ikke-eksisterende navn:${ikkeNavn}`);
+            
+            //Oppgave 7
+            var diktOutput = document.getElementById("dikt-output");
+            var dikt = "Hei dette er et dikt, men ikke det på tenk på det da virker det ikke sånn";
+            
+            diktOutput.innerHTML = dikt;
+            
+            //Oppgave 8
+            var brukerOutput = document.getElementById("bruker-output");
+            var brukerInput = window.prompt("Skriv det første du tenker på her...");
+            
+            brukerOutput.innerHTML = brukerInput;
+            
+            
+            
+        
+            
+            
+        
+        </script>
+    
+    </body>
+</html>

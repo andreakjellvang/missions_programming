@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TEST med value!!!!</title>
+    </head>
+    <body>
+        
+        <input type="text" id="word-text">
+        <input type="button" id="word-button" value="Alert ordet">
+    
+        <script>
+            var wordButton = document.getElementById("word-button");
+            var wordText = document.getElementById("word-text");
+            
+            function showWord (){
+                var word = wordText.value;
+                alert(word.includes("hei"));
+                wordText.value = "";
+            }
+            
+            wordButton.onclick = showWord;
+         
+        </script>
+    
+    </body>
+</html>

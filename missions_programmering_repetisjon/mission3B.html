@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Mer variabler, input og output</title>
+    </head>
+    <body>
+        
+        <!-- Oppgave 1, HTML-del -->
+        <p id="result-output"></p>
+        
+        <!-- Oppgave 2, HTML-del -->
+        <p id="parse-output"></p>
+
+
+        <script>
+            //Oppgave 1
+            var resultOutput = document.getElementById("result-output");
+            var number1 = window.prompt("Gi meg et tall");
+            var number2 = window.prompt("Gi meg et tall til");
+            var result = +number1 + +number2;
+            
+            resultOutput.innerHTML = `Regnet med enkel metode: ${result}`;
+            
+            //Oppgave 2 : parseInt
+            var parseOutput = document.getElementById("parse-output");
+            var number3 = window.prompt("Gi meg et tall bitches...");
+            var number4 = window.prompt("Gi meg another numbaaaah");
+            var firstNumber = parseInt(number3);
+            var secondNumber = parseInt(number4);
+            var result2 = firstNumber + secondNumber;
+            
+            parseOutput.innerHTML = `Regnet med parseint: ${result2}`;
+            
+            
+        </script>        
+    </body>
+</html>
